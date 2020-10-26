@@ -2,7 +2,7 @@
 Web diary on the django framework.
 
 ## About
-...
+This project is a web application that can be used as a personal diary for recording thoughts and events. The front-end of the project was created using the Materialize.css css framework. The back end is written in Django.
 
 ## Install
 ### Windows
@@ -100,7 +100,7 @@ Bypass password validation and create user anyway? [y/N]: y
 Superuser created successfully.
 ```
 
-After that, start the server and go to ```127.0.0.1:8000/admin``` and log in to the admin panel.
+After that, start the server and go to ```127.0.0.1:8000/admin``` and log in to the admin panel. Done, now you can write your first diary entry.
 
 ### Linux
 
@@ -112,15 +112,15 @@ After that, start the server and go to ```127.0.0.1:8000/admin``` and log in to 
 ## Examples
 Below are screenshots of the running diary. Main page:
 
-![screenshot1](.github/screenshot1.jpg)
+![screenshot1](.github/screenshot1.png)
 
-![screenshot2](.github/screenshot2.jpg)
+![screenshot2](.github/screenshot2.png)
 
 One of the diary entries looks like this:
 
-![screenshot3](.github/screenshot3.jpg)
+![screenshot3](.github/screenshot3.png)
 
-![screenshot4](.github/screenshot4.jpg)
+![screenshot4](.github/screenshot4.png)
 
-![screenshot5](.github/screenshot5.jpg)
+![screenshot5](.github/screenshot5.png)
 
