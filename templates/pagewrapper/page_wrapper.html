@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+{% load static %}
+
+	<head>
+		<!-- Import Google Icon Font -->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+		<!-- Import Materialize.css -->
+		<link type="text/css" rel="stylesheet" href="{% static 'css/materialize.min.css' %}" media="screen, projection"/>
+
+		<!-- Import correction library -->
+		<link type="text/css" rel="stylesheet" href="{% static 'css/material_correction.css' %}" media="screen, projection"/>
+
+		<!-- Let browser know website is optimized for mobile -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+		<title>Diary</title>
+	</head>
+
+	<body>
+	<!-- Navigation -->
+		<nav>
+			<div class="nav-wrapper {% include 'pagewrapper/color.txt' %}">
+				<div class="container">
+					<a href="/root/" class="brand-logo"><i class="material-icons">book</i></a>
+					<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+
+					<ul class="right hide-on-med-and-down">
+                        <li class="active"><a href="/">Diary</a></li>
+                        <li><a href="/admin/">Admin panel</a></li>
+					</ul>
+
+					<ul class="side-nav" id="mobile-demo">
+                        <li><a href="/">Diary</a></li>
+                        <li><a href="/admin/">Admin panel</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+        {% block content %}
+
+        {% endblock %}
+
+		<!-- Footer -->
+		<footer class="page-footer {% include 'pagewrapper/color.txt' %}">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m3">
+                        <h5>Parts</h5>
+                        <ul>
+                            <li><a class="white-text" href="/">Diary</a></li>
+                            <li><a class="white-text" href="/admin/">Admin panel</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col s12 m9">
+                        <h5>Diary</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada volutpat massa, in aliquet orci fermentum at. Morbi ac felis vitae augue mattis euismod id vitae metus. Mauris pulvinar massa non mollis maximus. Duis ornare vulputate leo ac imperdiet. Aliquam dignissim enim lorem, in fermentum mi fringilla at. Aliquam consectetur, dui a gravida semper, tortor velit gravida eros, sit amet semper nisi ex a nisl. Etiam elementum sem nisi.</p>
+                    </div>
+                </div>
+            </div>
+
+			<div class="footer-copyright">
+				<div class="container">
+					l1ghth4t &copy; 2020
+				</div>
+			</div>
+		</footer>
+
+		<!-- Import jQuery before materialize.js -->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="{% static 'js/materialize.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/AliveMaterialize.js' %}"></script>
+	</body>
+</html>

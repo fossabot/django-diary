@@ -1,0 +1,49 @@
+{% extends "pagewrapper/page_wrapper.html" %}
+
+{% load static %}
+
+{% block content %}
+    <!-- Parallax -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="{{ post.main_image.url }}">
+        </div>
+    </div>
+
+    <!-- Breadcrumb -->
+    <nav>
+        <div class="nav-wrapper {% include 'pagewrapper/color.txt' %}">
+            <div class="container">
+                <div class="col s12">
+                    <a href="/" class="breadcrumb">Diary</a>
+                    <a href="/{{ post.id }}" class="breadcrumb">{{ post.title }}</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="section white">
+        <div class="row">
+
+            <div class="col s12 m8">
+                <div class="container">
+                    <h1 class="{% include 'pagewrapper/color.txt' %}-text">{{ post.title }}</h1>
+
+                    <blockquote class="right-align">{{ post.quote | linebreaks }}</blockquote>
+
+                    <p>{{ post.text | linebreaks }}</p>
+
+                    <p class="{% include 'pagewrapper/color.txt' %}-text">Date: <i class="grey-text">{{ post.published }}</i></p>
+
+                    <h4 class="{% include 'pagewrapper/color.txt' %}-text">Pictures:</h4>
+
+                    {% for image in post.articleimages_set.all %}
+                        <div class="col s12 m6">
+                            <img src="{{ image.image.url }}" width="250" class="materialboxed" data-caption="{{ image.title }}" alt="{{ image.title }}"></div>
+                    {% endfor %}
+                </div>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
