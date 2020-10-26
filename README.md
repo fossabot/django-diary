@@ -1,4 +1,5 @@
-![Django diary](.github/readme_header.jpg)
+# Django diary
+...
 
 ## Preparation
 ...
