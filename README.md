@@ -2,7 +2,7 @@
 Web diary on the django framework.
 
 ## About
-This project is a web application that can be used as a personal diary for recording thoughts and events. The front-end of the project was created using the Materialize.css css framework. The back end is written in Django.
+This project is a web application that can be used as a personal diary for recording thoughts and events. The front-end of the project was created using the Materialize.css framework. The back end is written in Django.
 
 ## Install
 ### Windows
@@ -106,8 +106,6 @@ After that, start the server and go to ```127.0.0.1:8000/admin``` and log in to 
 
 ...
 
-## Usage
-...
 
 ## Examples
 Below are screenshots of the running diary. Main page:
@@ -123,4 +121,6 @@ One of the diary entries looks like this:
 ![screenshot4](.github/screenshot4.png)
 
 ![screenshot5](.github/screenshot5.png)
+
+## Licensing
 
