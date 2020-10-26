@@ -1,5 +1,4 @@
-# Django-diary
-Web diary on the django framework
+![Django diary](.github/readme_header.jpg)
 
 ## Preparation
 ...
